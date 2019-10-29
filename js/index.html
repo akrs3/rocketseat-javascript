@@ -4,32 +4,20 @@
 </head>
 <body>
     <script>
-       function retornaSexo(sexo){
-           // M, F
-           // Masculino, Feminino
-           if (sexo === 'M'){
-               return 'Masculino';
-           } else if (sexo === 'F'){
-               return 'Feminino';
-           }
-           else {
-               return 'Outro';
-           }
-       }
+        var sexo = 'F';
+        var retorno;
 
-       function retornaSexo2(sexo){
-           switch (sexo){
-                case 'M':
-                    return 'Masculino';
-                case 'F':
-                    return 'Feminino';
-                default:
-                    return 'Outro';
-           }
+       /*if (sexo === 'Feminino'){
+           retorno = 'Feminino';
+       } else {
+           retorno = 'Masculino';
        }
+       console.log(retorno);*/
 
-       var resultado = retornaSexo('M');
-       console.log(resultado);
+        /* OU usando a CONDIÇÃO TERNÁRIA*/
+
+       retorno = (sexo === 'F') ? 'Feminino' : 'Masculino';
+       console.log(retorno);
     </script>
 </body>
 </html>
