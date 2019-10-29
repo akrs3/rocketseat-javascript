@@ -5,24 +5,36 @@
     </head>
     <body>
         <div id="app">
-            <button onclick="mostraAlerta()">Me pressione</button>
-        </div>
-        <div>
-            <button onmouseover="mostraAlerta()">Passe a seta</button>
-        </div>
-        <div>
-            <input onkeydown="mostraAlerta()"/>
-        </div>
-        <div>
-            <input onkeyup="mostraAlerta()"/>
-        </div>
-        <div>
-            <input onkeypress="mostraAlerta()"/>
+            <input type="text" name="nome" id="nome" class="nome"/>
+            <!--<input type="text" name="nome" id="nome2" />-->
+            <button class="botao">Adicionar</button>
         </div>
 
         <script>
-            function mostraAlerta(){
-                alert('Botão foi clicado');
+        /*
+            var inputElement = document.getElementById('nome');
+            var tagElement = document.getElementsByTagName('input');
+            var classElement = document.getElementsByClassName('nome');
+            //var tagElement = document.getElementsByTagName('input')[0];
+
+            console.log(inputElement);
+            console.log(tagElement);
+            console.log(classElement);
+
+            */
+
+            var inputElement = document.querySelector('div#app input');
+            inputElement = document.querySelector('input[name=nome]');
+            inputElement = document.querySelector('input');
+            console.log(inputElement);
+
+            inputElement = document.querySelector('input[name=nome]');
+            var btnElement = document.querySelector('button.botao');
+
+            btnElement.onclick= function(){
+                var text = inputElement.value;
+
+                alert(text);
             }
         </script>
     </body>
