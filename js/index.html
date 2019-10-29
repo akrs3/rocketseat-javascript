@@ -5,37 +5,23 @@
     </head>
     <body>
         <div id="app">
-            <input type="text" name="nome" id="nome" class="nome"/>
-            <!--<input type="text" name="nome" id="nome2" />-->
-            <button class="botao">Adicionar</button>
+            <input id="nome" />
         </div>
 
         <script>
-        /*
-            var inputElement = document.getElementById('nome');
-            var tagElement = document.getElementsByTagName('input');
-            var classElement = document.getElementsByClassName('nome');
-            //var tagElement = document.getElementsByTagName('input')[0];
 
-            console.log(inputElement);
-            console.log(tagElement);
-            console.log(classElement);
+            var linkElement = document.createElement('a');
+            linkElement.setAttribute('href', 'https://rocketseat.com.br/starter/curso-gratuito-javascript');
+            linkElement.setAttribute('title', 'Site da Rocketseat');
+            var textElement = document.createTextNode('Acessar site da Rocketseat');
+            linkElement.appendChild(textElement);
 
-            */
+            var containerElement = document.querySelector('div#app');
+            containerElement.appendChild(linkElement);
 
-            var inputElement = document.querySelector('div#app input');
-            inputElement = document.querySelector('input[name=nome]');
-            inputElement = document.querySelector('input');
-            console.log(inputElement);
+            var inputElement = document.querySelector('#nome');
+            containerElement.removeChild(inputElement);
 
-            inputElement = document.querySelector('input[name=nome]');
-            var btnElement = document.querySelector('button.botao');
-
-            btnElement.onclick= function(){
-                var text = inputElement.value;
-
-                alert(text);
-            }
         </script>
     </body>
 </html>
