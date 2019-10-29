@@ -1,6 +1,0 @@
-function nomedafuncao (parametros){
-    corpo da funcao
-}
-
-== : compara valores das variaveis
-=== : compara valores e tipos das variaveis
