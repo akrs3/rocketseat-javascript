@@ -1,15 +1,29 @@
 <html>
-<head>
-    <title>Curso Javascript</title>
-</head>
-<body>
-    <script>
-        function exibeAlgo(){
-            console.log('Hello World');
-        }
+    <head>
+        <meta charset="UTF-8"
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <button onclick="mostraAlerta()">Me pressione</button>
+        </div>
+        <div>
+            <button onmouseover="mostraAlerta()">Passe a seta</button>
+        </div>
+        <div>
+            <input onkeydown="mostraAlerta()"/>
+        </div>
+        <div>
+            <input onkeyup="mostraAlerta()"/>
+        </div>
+        <div>
+            <input onkeypress="mostraAlerta()"/>
+        </div>
 
-        //setInterval(exibeAlgo, 1000);
-        setTimeout(exibeAlgo, 5000);
-    </script>
-</body>
+        <script>
+            function mostraAlerta(){
+                alert('Botão foi clicado');
+            }
+        </script>
+    </body>
 </html>
