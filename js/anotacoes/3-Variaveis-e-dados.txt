@@ -1,0 +1,4 @@
+JS não possui tipagem estática. A tipagem é dinamica.
+As variáveis mudam de tipo de acordo com o conteúdo que lhe é atribuído
+
+- Tipos: inteiro, float, string, booleano, lista, objeto.
